@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Developer</title>
+  <meta name="description" content="Personal profile and portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">YN<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="avatar" aria-hidden="true">YN</div>
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Your Name</h1>
+      <p class="tagline">Student developer at Launchpad Philly — I build things for the web.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2><span class="num">01</span> About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a developer based in Philadelphia who loves turning ideas into real, working
+            projects. I'm currently learning full-stack web development and enjoy building
+            interactive apps that run right in the browser.
+          </p>
+          <p>
+            When I'm not coding, you can find me <em>[your hobbies here]</em>.
+            I'm looking for <em>[internships / opportunities / collaborations]</em>.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Location</span>Philadelphia, PA</li>
+          <li><span>Program</span>Launchpad Philly</li>
+          <li><span>Focus</span>Web development</li>
+          <li><span>Status</span><div><b class="dot"></b>Open to opportunities</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2><span class="num">02</span> Skills</h2>
+      <div class="skill-groups">
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span></div>
+        </div>
+        <div class="card">
+          <h3>Tools &amp; Frameworks</h3>
+          <div class="tags"><span>Node.js</span><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+        </div>
+        <div class="card">
+          <h3>Soft skills</h3>
+          <div class="tags"><span>Teamwork</span><span>Problem solving</span><span>Communication</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2><span class="num">03</span> Projects</h2>
+      <div class="projects">
+        <article class="card project">
+          <div class="project-head">
+            <h3>NEXUS OS</h3>
+            <a href="https://github.com/nmuha0272-cmyk/nexus-os" target="_blank" rel="noopener" aria-label="NEXUS OS on GitHub">↗</a>
+          </div>
+          <p>
+            A Windows-style desktop that runs in a browser tab — Start menu, taskbar, draggable
+            and snappable windows, a File Explorer, Notepad, Settings and a built-in assistant.
+          </p>
+          <div class="tags small"><span>JavaScript</span><span>Node.js</span><span>CSS</span></div>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <h3>Profile Website</h3>
+            <a href="https://github.com/nmuha0272-cmyk/work" target="_blank" rel="noopener" aria-label="Profile website on GitHub">↗</a>
+          </div>
+          <p>
+            This site! A responsive one-page portfolio with dark mode and scroll animations,
+            built with plain HTML, CSS and JavaScript.
+          </p>
+          <div class="tags small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="card project placeholder">
+          <div class="project-head">
+            <h3>Your next project</h3>
+            <span>＋</span>
+          </div>
+          <p>Add another project here — describe what it does and what you learned building it.</p>
+          <div class="tags small"><span>Tech</span><span>Used</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal contact">
+      <h2><span class="num">04</span> Contact</h2>
+      <p>Have a question, an opportunity, or just want to say hi? My inbox is open.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn" href="https://github.com/nmuha0272-cmyk" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name · Built from scratch with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
